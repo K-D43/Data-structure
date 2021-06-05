@@ -1,0 +1,19 @@
+# Data-structure
+class Array{
+    public static void check(int arr[],int n){
+        for (int i=0;i<=n;i++){
+            for (int j=i+1;j<n;j++){
+                if (arr[i]+arr[j]==9){
+                    System.out.println(arr[i]+" and "+arr[j]);
+                }
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+        int arr[]={2,7,11,4,-2,5};
+        int n=arr.length;
+        System.out.println("Your elements are...");
+        check(arr,n);
+    }
+}
