@@ -1,0 +1,30 @@
+# Data-structure
+class Common{
+    public static void find(int arr1[],int arr2[],int arr3[]){
+        int i=0,j=0,k=0;
+        while(i<arr1.length && j<arr2.length && k<arr3.length){
+            if (arr1[i]==arr2[j] && arr2[j]==arr3[k]){
+                System.out.println(arr1[i]);
+                i++;
+                j++;
+                k++;
+            }
+            else if(arr1[i]<arr2[j]){
+                i++;
+            }
+            else if(arr2[j]<arr3[k]){
+                j++;
+            }
+            else {
+                k++;
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+        int arr1[]={1,4,7,12,15,20,23};
+        int arr2[]={3,7,10,12,15,18};
+        int arr3[]={2,7,9,11,13,18,25,26,35};
+        find(arr1,arr2,arr3);
+    }
+}
