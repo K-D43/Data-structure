@@ -1,0 +1,15 @@
+# Data-structure
+class Gfg{
+    public static void show(int arr[],int key) {
+        Arrays.sort(arr);
+        int mul=1;
+        for (int i = 0; i < key; i++) {
+            mul = mul * arr[i];
+            System.out.println(mul);
+        }
+    }    public static void main(String[] args) {
+        int arr[]={198,76,544,123,154,675};
+        int key=2;
+        show(arr,key);
+    }
+}
