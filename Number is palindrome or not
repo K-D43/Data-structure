@@ -1,0 +1,30 @@
+# Data-structure
+class Reverse{
+    public static int reverse(int x) {
+        int rev = 0;
+        if (x < 0) {
+            while (x < 0) {
+                int lastdigit = x % 10;
+                rev = (rev * 10) + lastdigit;
+                x = x / 10;
+            }
+            return rev;
+        } else {
+            while (x > 0) {
+                int lastdigit = x % 10;
+                rev = (rev * 10) + lastdigit;
+                x = x / 10;
+            }
+            return rev;
+        }
+    }
+    public static void main(String[] args) {
+        int x=-1234321;
+        if (reverse(x)==x){
+            System.out.println("Number is pallindrome");
+        }
+        else{
+            System.out.println("Number is not pallindrome");
+        }
+    }
+}
