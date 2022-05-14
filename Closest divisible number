@@ -1,0 +1,21 @@
+# Data-structure
+import java.util.Scanner;
+
+public class Practice_gfg {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter a number to check");
+        int number=sc.nextInt();
+        System.out.println("Enter a number to devide by");
+        int devisibleBy=sc.nextInt();
+        int result=0;
+        int mid=(devisibleBy/2);
+        int before=number-mid;
+        int after=number+mid;
+        for (int i=before;i<=after;i++) {
+            if (i % devisibleBy == 0) {
+                System.out.println(i);
+            }
+        }
+    }
+}
