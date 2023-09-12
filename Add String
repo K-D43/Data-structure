@@ -1,0 +1,10 @@
+class Main{
+    public static void main(String[] args) {
+        String str1="111";
+        String str2="222";
+        int str11=Integer.parseInt(str1);
+        int str22=Integer.parseInt(str2);
+        int res=str11+str22;
+        System.out.println(res);
+    }
+}
