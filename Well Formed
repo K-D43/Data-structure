@@ -1,0 +1,28 @@
+# Data-structure
+//class Main{
+//    public static void main(String[] args) {
+//        Stack<Character> s=new Stack<Character>();
+//        String str="[{()]";
+//        int len=str.length();
+//        for (int i=0;i<len;i++){
+//            char ch=str.charAt(i);
+//            if (s.isEmpty()){
+//                s.push(ch);
+//            } else if(ch=='[' || ch=='{' || ch=='('){
+//                s.push(ch);
+//            } else if (ch=='}' && s.peek()=='{'){
+//                s.pop();
+//            } else if (ch==']' && s.peek()=='['){
+//                s.pop();
+//            } else if (ch==')' && s.peek()=='('){
+//                s.pop();
+//            }
+//        }
+//        if (s.isEmpty()){
+//            System.out.println("Given string is well formed");
+//        }
+//        else {
+//            System.out.println("no");
+//        }
+//    }
+//}
