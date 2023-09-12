@@ -1,0 +1,26 @@
+# Data-structure
+//class Main{
+//    public static boolean check(String str1,String str2){
+//        str1=str1.toLowerCase();
+//        str2=str2.toLowerCase();
+//
+//        char[] STR1=str1.toCharArray();
+//        char[] STR2=str2.toCharArray();
+//
+//        Arrays.sort(STR1);
+//        Arrays.sort(STR2);
+//
+//        boolean result=Arrays.equals(STR1,STR2);
+//        if (result){
+//            return true;
+//        }else{
+//            return false;
+//        }
+//
+//    }
+//    public static void main(String[] args) {
+//        String str="aab";
+//        String str1="baa";
+//        System.out.println(check(str,str1));
+//    }
+//}
