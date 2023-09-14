@@ -1,0 +1,20 @@
+class Main{
+    public static void main(String[] args) {
+        String str="banana";
+        Map<Character,Integer> map=new HashMap<Character, Integer>();
+        int len=str.length();
+        int i=0;
+        while(len>0){
+            if (!map.containsKey(str.charAt(i))){
+                map.put(str.charAt(i),1);
+            }else{
+                map.put(str.charAt(i),map.get(str.charAt(i))+1);
+            }
+            i++;
+            len--;
+        }
+        for (Map.Entry<Character,Integer> m:map.entrySet()){
+            System.out.println(m.getKey()+" "+m.getValue());
+        }
+    }
+}
