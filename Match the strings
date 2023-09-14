@@ -1,0 +1,25 @@
+
+class Main{
+    public static void main(String[] args) {
+        String str1="abcd";
+        String str2="dcas";
+        if (str1.length()==str2.length()){
+            char[] str1ch=str1.toCharArray();
+            char[] str2ch=str2.toCharArray();
+
+            Arrays.sort(str1ch);
+            Arrays.sort(str2ch);
+            for (int i=0;i<str1ch.length;i++){
+                if (str1ch[i]!=str2ch[i]){
+                    System.out.println("Both string are not equal");
+                    return;
+                }else{
+                    i++;
+                }
+            }
+        }else{
+            System.out.println("false");
+        }
+
+    }
+}
