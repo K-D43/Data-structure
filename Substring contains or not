@@ -1,0 +1,21 @@
+# Data-structure
+class Main{
+    static List<String> al=new ArrayList<String>();
+    public static void findSubstring(String str,String ans){
+        if (str.length()==0){
+            al.add(ans);
+            return;
+        }
+        findSubstring(str.substring(1),ans+str.charAt(0));
+        findSubstring(str.substring(1),ans);
+    }
+    public static void main(String[] args) {
+        String str="abc";
+        String pattern=" ab";
+        findSubstring(str," ");
+        if(al.contains(pattern)){
+            System.out.println("true");
+        }
+        System.out.println(al);
+    }
+}
